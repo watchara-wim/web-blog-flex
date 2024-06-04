@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0px 1px 8px #888888;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 30px;
+}
+
+nav li {
+    line-height: 60px;
+    text-align: center;
+    width: 80px;
+    height: 100%;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav li:hover {
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    padding: 120px 100px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bio {
+    text-align: justify;
+    width: 40vw;
+}
+
+.bio > button {
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: salmon;
+}
+
+.bio > button:hover {
+    transition: 0.4s;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.bio > button:active {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.profile-pic {
+    clip-path: circle(50%)
+}
+
+.post {
+    background-color: rgb(178, 226, 255);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 100px;
+}
+
+.view {
+    background: none;
+    border: none;
+    color: royalblue;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.view:active {
+    transform: scale(1.1);
+}
+
+.post-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content {
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    padding: 15px;
+    margin: 30px 15px 0px 0px;
+}
+
+.content-detail {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.content-detail > div {
+    width: 40%;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+i {
+    font-size: 30px;
+}
+
+.works {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 100px 10px;
+}
+
+.work-post {
+    padding: 30px 0px;
+    display: flex;
+    width: 100%;
+    
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.work-image {
+    width: 180px; 
+    height: 120px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    margin-right: 10px;
+}
+
+.year {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 15px;
+    margin: 10px 15px 10px 0px;
+}
+
+.work-type {
+    height: 25px; 
+    margin: 10px; 
+    line-height: 25px; 
+    color: gray;
+}
+
+.work-detail {
+    width: 70%;
+}
+
+.footage {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+}
