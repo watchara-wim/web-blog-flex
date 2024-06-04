@@ -42,6 +42,7 @@ a {
 .profile {
     padding: 120px 100px 30px;
     display: flex;
+    flex-flow: row-reverse wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,6 +50,7 @@ a {
 .bio {
     text-align: justify;
     width: 40vw;
+    margin: auto;
 }
 
 .bio > button {
@@ -71,8 +73,13 @@ a {
     transition: 0.1s;
 }
 
+.pic {
+    width: auto;
+    margin: 20px auto;
+}
+
 .profile-pic {
-    clip-path: circle(50%)
+    clip-path: circle(50%);
 }
 
 .post {
@@ -100,6 +107,7 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .content {
@@ -107,7 +115,8 @@ a {
     width: 400px;
     height: 350px;
     padding: 15px;
-    margin: 30px 15px 0px 0px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .content-detail {
